@@ -1,0 +1,277 @@
+/* header */
+
+html {
+  font-size: 18px;
+  font-family: helvetica;
+  line-height: 1.4;
+}
+
+header {
+
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  background-color: cadetblue;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header img {
+  height: 1.5rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+
+nav span {
+  font-size: 1rem;
+  padding-right: 2rem;
+}
+
+.small {
+  display: none;
+}
+
+.main {
+  padding-top: 1rem;
+  background-image: url('../glasses-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 100%;
+}
+
+.flex {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.txt {
+  background-color: white;
+  width: auto;
+  text-align: center;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+h1 {
+  font-weight: bold;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* Obrazki */
+
+.flex.container {
+  max-width: 960px;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+}
+
+.image {
+  margin: 3rem;
+  height: 8rem;
+  max-width: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+#paper img {
+  max-width: 3.5rem;
+  height: auto;
+}
+
+.image img {
+  max-width: 5rem;
+  height: auto;
+}
+
+.txtcnt {
+  text-align: center;
+}
+
+.image p {
+  line-height: 1.4;
+}
+
+
+/* Support cnt */
+
+.support {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+}
+
+.content {
+  max-width: 35%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 5rem;
+
+}
+
+.content p {
+  text-align: left;
+  line-height: 1.4;
+}
+
+.head {
+  padding-top: 0.5rem;
+  padding-left: 1.25rem;
+  padding-bottom: 0.5rem;
+  background-color: cadetblue;
+  width: 10rem;
+  margin-bottom: 1rem;
+  height: auto;
+}
+
+.head span {
+  color: white;
+  font-weight: bold;
+
+}
+
+
+/* footer */
+
+footer {
+  height: auto;
+  max-width: 960px;
+  background-color: azure;
+  padding: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+/* media query */
+
+@media only screen and (max-width: 1024px) {
+  header {
+    width: 100%
+  }
+
+  .main {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .txt {
+    margin-right: 3%;
+    margin-top: 5rem;
+    width: auto;
+  }
+   h1 {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+}
+
+@media only screen and (max-width: 603px) {
+  .big {
+    display: none;
+  }
+
+  .small {
+    display: inline;
+  }
+
+  .main {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .txt {
+    margin-top: 9rem;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+
+  }
+
+   h1 {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .flex.container {
+    flex-direction: column;
+    margin: 3.77rem 0;
+  }
+
+  .image {
+    margin: 0;
+  }
+
+  #ruler, #truck {
+    margin-top: 1.54rem;
+    max-height: 8rem;
+    height: auto;
+  }
+
+  #ruler img {
+    padding: 1rem;
+  }
+
+  #truck img {
+    padding: 1rem;
+  }
+
+  .support {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .head {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%;
+    margin-bottom: 4rem;
+    margin-left: 0;
+  }
+
+  .content p {
+    font-size: 0.77rem;
+    padding-left: 0.5rem;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer img {
+    margin: 0 auto;
+  }
+}
